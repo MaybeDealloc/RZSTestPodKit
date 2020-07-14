@@ -16,6 +16,7 @@
 		288EE54D24BDC4B6004C520F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 288EE54C24BDC4B6004C520F /* main.m */; };
 		288EE55724BDC4B6004C520F /* RZSTestPodKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 288EE55624BDC4B6004C520F /* RZSTestPodKitTests.m */; };
 		288EE56224BDC4B6004C520F /* RZSTestPodKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 288EE56124BDC4B6004C520F /* RZSTestPodKitUITests.m */; };
+		288EE57324BDC652004C520F /* TestKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 288EE57124BDC652004C520F /* TestKitManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		288EE55D24BDC4B6004C520F /* RZSTestPodKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZSTestPodKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		288EE56124BDC4B6004C520F /* RZSTestPodKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZSTestPodKitUITests.m; sourceTree = "<group>"; };
 		288EE56324BDC4B6004C520F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288EE57124BDC652004C520F /* TestKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestKitManager.m; sourceTree = "<group>"; };
+		288EE57224BDC652004C520F /* TestKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestKitManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		288EE53924BDC4B4004C520F /* RZSTestPodKit */ = {
 			isa = PBXGroup;
 			children = (
+				288EE56F24BDC652004C520F /* Test */,
 				288EE53A24BDC4B4004C520F /* AppDelegate.h */,
 				288EE53B24BDC4B4004C520F /* AppDelegate.m */,
 				288EE53D24BDC4B4004C520F /* SceneDelegate.h */,
@@ -135,6 +139,23 @@
 				288EE56324BDC4B6004C520F /* Info.plist */,
 			);
 			path = RZSTestPodKitUITests;
+			sourceTree = "<group>";
+		};
+		288EE56F24BDC652004C520F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				288EE57024BDC652004C520F /* Manager */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		288EE57024BDC652004C520F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				288EE57124BDC652004C520F /* TestKitManager.m */,
+				288EE57224BDC652004C520F /* TestKitManager.h */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +289,7 @@
 			files = (
 				288EE54224BDC4B4004C520F /* ViewController.m in Sources */,
 				288EE53C24BDC4B4004C520F /* AppDelegate.m in Sources */,
+				288EE57324BDC652004C520F /* TestKitManager.m in Sources */,
 				288EE54D24BDC4B6004C520F /* main.m in Sources */,
 				288EE53F24BDC4B4004C520F /* SceneDelegate.m in Sources */,
 			);
